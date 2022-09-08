@@ -1,8 +1,8 @@
-nclude <stdio.h>
+#include <stdio.h>
 
 /**
- * main - prints the string plus new line
- * Return: 0 if exit is true, non-zero otherwise
+ *  main - prints the phrase "With  proper grammar on a new line
+ *  Return: 0 if exited properly, non-zero otherwise
  */
 int main(void)
 {
