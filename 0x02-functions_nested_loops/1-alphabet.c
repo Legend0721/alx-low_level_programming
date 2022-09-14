@@ -3,14 +3,13 @@
 
 
 /**
- * This will print_alphabet from A to Z
+ * print_alphabet - from A to Z
  *
  */
 
 
 
 void print_alphabet(void)
-
 {
 
 	int ch;
