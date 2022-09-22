@@ -11,7 +11,8 @@
 char *cap_string(char *s)
 {
 	int count;
-	/*  scan through string */
+
+/*  scan through string */
 
 	count = 0;
 	while (s[count] != '\0')
@@ -32,7 +33,6 @@ char *cap_string(char *s)
 			}
 		}
 		count++;
-		}
-
+	}
 	return (s);
 }
