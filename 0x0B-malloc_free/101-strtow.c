@@ -22,10 +22,9 @@ int len(char *str)
 /**
  * num_words - counts the number of words in str
  *@str: string to be used
- *
  *Return: number of words
-
 */
+
 int num_words(char *str)
 {
 	int i = 0, words = 0;
@@ -76,8 +75,7 @@ char **strtow(char *str)
 			else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 			{
 				split[j] = (char *)malloc(sizeof(char) * size + 1);
-
-			if (split[j] != NULL)
+				if (split[j] != NULL)
 				{
 					while (temp < size)
 					{
