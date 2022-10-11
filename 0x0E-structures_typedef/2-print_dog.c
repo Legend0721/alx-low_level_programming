@@ -41,13 +41,16 @@ char *_copy(char *src)
 	{
 		return (NULL);
 	}
-	for (len = 0; src[len] != '\0'; len++);
+	for (
+			len = 0;
+			src[len] != '\0';
+			len++);
 	ptr = malloc(sizeof(char) * (len + 1));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-    for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
 		ptr[i] = src[i];
 	}
@@ -69,7 +72,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *snoopie;
 	char *new_name, *new_owner;
 
-    if (name == NULL || owner == NULL)
+	if (name == NULL || owner == NULL)
 	{
 		return (NULL);
 	}
@@ -93,10 +96,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free((*snoopie).name);
 		free(snoopie);
 
-        return (NULL);
+	return (NULL);
 	}
 
 	(*snoopie).owner = new_owner;
 
-    return (snoopie);
+	return (snoopie);
 }
