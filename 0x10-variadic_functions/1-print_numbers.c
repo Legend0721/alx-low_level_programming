@@ -9,10 +9,10 @@
   * @...: A variable number of numbers to be printed.
   */
 
-void print_numbers(const char *separator, const unsigned int n, ...);
-{
-	va_list nums;
-	unsigned int index;
+void print_numbers(const char *separator, const unsigned int n, ...)
+	{
+		va_list nums;
+		unsigned int index;
 
 	va_start(nums, n);
 
